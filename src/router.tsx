@@ -11,8 +11,8 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/app" element={<App />} />
+        <Route path="/" element={<App />} />
+        <Route path="/home" element={<Index />} />
         <Route path="/id-copy" element={<IdCopyFullPage />} />
         <Route path="/id-copy-10pairs" element={<IdCopyTenPairsPage />} />
         <Route path="/late-birth" element={<LateBirth />} />

@@ -4,11 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "postinstall": "chmod +x node_modules/.bin/* || true",
-  "build": "vite build",
-}
+    "postinstall": "chmod +x node_modules/.bin/* || true",
+    "build": "vite build",
+    "preview": "vite preview",
+    "dev": "vite",
+    "cap:sync": "npx cap sync android",
+    "cap:copy": "npx cap copy android",
+    "cap:update": "npx cap update android",
+    "cap:open": "npx cap open android",
+    "android:build": "npm run build && npm run cap:sync"
   },
   "dependencies": {
+    "@capacitor/android": "^8.1.0",
+    "@capacitor/cli": "^8.1.0",
+    "@capacitor/core": "^8.1.0",
     "@imgly/background-removal": "^1.7.0",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.5",
@@ -20,7 +29,9 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.22.0",
     "sonner": "^1.4.0",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "vite-plugin-pwa": "^1.2.0",
+    "workbox-window": "^7.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

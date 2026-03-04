@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+/dist
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Android (Capacitor)
+android/.gradle
+android/capacitor-cordova-android-plugins/
+android/app/src/main/assets/public/**
+!android/app/src/main/assets/public/.gitkeep
+android/app/build/
+android/build/
+*.keystore
+
+# PWA generated icons (keep originals, ignore generated)
+public/pwa-192x192.png
+public/pwa-512x512.png
+public/apple-touch-icon.png
+
+# Build artifacts
+*.log
